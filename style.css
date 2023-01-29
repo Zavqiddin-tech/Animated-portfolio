@@ -79,8 +79,48 @@ b {
     padding: 0 10%;
     overflow: hidden;
 }
+.wrapper::before {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    left: -12%;
+    top: 40%;
+    animation: object1 6s linear infinite;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    left: 35%;
+    top: 12%;
+    animation: object2 6s linear infinite;
+}
+
+@keyframes object1 {
+    50% {
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50% {
+        left: 35%;
+        top: 10%;
+    }
+}
+
 .cols {
     width: 50%;
+}
+.cols0 {
+    z-index: 10;
 }
 
 .topline {

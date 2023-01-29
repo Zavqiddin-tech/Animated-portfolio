@@ -33,9 +33,9 @@
 
 
       <div class="wrapper">
-        <div class="cols col0">
+        <div class="cols cols0">
           <span class="topline">Hello</span>
-          <h1>I'm <span class="multiText">Coder</span></h1>
+          <h1>I'm <span class="multiText"></span></h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             eaque delectus doloribus culpa accusantium quas voluptatibus eos hic
@@ -47,7 +47,7 @@
               <button>hire me</button>
           </div>
         </div>
-        <div class="cols col1">
+        <div class="cols cols1">
             <div class="imgbox">
                 <img src="./img/img2.png" id="splash" alt="splash">
                 <img src="./img/call-center.png" alt="">
@@ -55,5 +55,17 @@
         </div>
       </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typingEffect = new Typed(".multiText", {
+        strings: ['coder', 'develper', 'designer'],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500
+      })
+    </script>
   </body>
 </html>
